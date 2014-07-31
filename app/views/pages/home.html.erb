@@ -1,6 +1,13 @@
 <div class='jumbotron center'>
 	<h1>This guy is sooo lazy.</h1>
 	<p> lol   </p>
-	<%= link_to 'OMG!', '#', class:'btn btn-default btn-lg' %>
-	<%= link_to 'Me2!', '#', class:'btn btn-primary btn-lg' %> 
+     <% if user_signed_in? %>
+          # do something
+     <% else %>
+       <p>
+         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+       </p>
+  <% end %>  
+</div>
 </div>

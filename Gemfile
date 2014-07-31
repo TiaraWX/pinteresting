@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
 # My gems
-gem 'bootstrap-sass'
+gem 'bootstrap-sass' 
+# bootstrap for page style and components
+gem 'devise','~> 3.2.4'
+# Flexible authentication solution for Rails with Warden
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
