@@ -5,7 +5,8 @@ gem 'bootstrap-sass'
 # bootstrap for page style and components
 gem 'devise','~> 3.2.4'
 # Flexible authentication solution for Rails with Warden
-
+gem 'paperclip', '~>4.0'
+# For user to upload images
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
