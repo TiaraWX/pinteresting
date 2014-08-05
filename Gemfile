@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+  source 'https://rubygems.org'
 
 # My gems
 gem 'bootstrap-sass' 
@@ -6,7 +6,13 @@ gem 'bootstrap-sass'
 gem 'devise','~> 3.2.4'
 # Flexible authentication solution for Rails with Warden
 gem 'paperclip', '~>4.0'
-# For user to upload images
+# For user to upload image
+
+# gem 'nokogiri', '~> 1.5.0'  #for the intallation of aws-sdk below
+gem 'aws-sdk', '~> 1.20.0'
+# Amazon Web Service SDK
+
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
