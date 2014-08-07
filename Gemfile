@@ -12,6 +12,13 @@ gem 'paperclip', '~>4.0'
 gem 'aws-sdk', '~> 1.20.0'
 # Amazon Web Service SDK
 
+gem 'masonry-rails', '~> 0.2.1'
+# Masonry 
+
+gem 'jquery-turbolinks'
+#
+
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
