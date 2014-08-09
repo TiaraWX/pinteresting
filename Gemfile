@@ -16,9 +16,12 @@ gem 'masonry-rails', '~> 0.2.1'
 # Masonry 
 
 gem 'jquery-turbolinks'
-#
+# Trubolinks for the jquery 
 
-
+gem 'will_paginate', '~> 3.0'
+# Paginate gem
+gem 'will_paginate-bootstrap'
+# Bootstrap style fro Will_paginate
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
