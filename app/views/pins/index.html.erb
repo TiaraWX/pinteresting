@@ -5,7 +5,7 @@
 <% if user_signed_in? %>
     <% unless session[:display_newpin_instruction] %>
       <div class="alert alert-info" id = "flash_page" > 
-        Hit "+New Pin" on menu to upload pictures : ) 
+        Hit the "+New Pin" in menu to upload your pictures : ) 
       </div>
       <% session[:display_newpin_instruction] = true %>
     <% end %>
