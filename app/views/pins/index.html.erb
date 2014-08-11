@@ -1,7 +1,7 @@
 <% unless user_signed_in? %>
   <%= render 'pages/home' %>
 <% end %>
-<%= admin_signed_in? %>
+
 <% if user_signed_in? %>
     <% unless session[:display_newpin_instruction] %>
       <div class="alert alert-info" id = "flash_page" > 
