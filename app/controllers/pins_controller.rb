@@ -73,7 +73,10 @@ class PinsController < ApplicationController
     # Dont allow users to touch the pins which are not belong to them.
     def correct_user
       @pin = current_user.pins.find_by(id: params[:id])
-      redirect_to pins_path, notice: "Not authorized." if @pin.nil?
+      redirect_to pins_path, notice: "Not authorized." if (@pin.nil? && !current_user.admin?)
+      if (@pin.nil? && current_user.admin?)
+        @pin = Pin.find(params[:id])
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
